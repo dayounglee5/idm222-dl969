@@ -1,0 +1,663 @@
+@font-face {
+    font-family: Inter;
+    src: url(../media/fonts/Inter.woff2);
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: PublicSans;
+    src: url(../media/fonts/PublicSans.woff2);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html{
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+.down-arrow{
+    font-size: 70px;
+    text-align: center;
+    line-height: 90%;
+    color: #28262C;
+}
+.logo img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+header {
+    padding: 2rem;
+    position: relative;
+}
+
+header label {
+    cursor: pointer;
+    height: 2rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    width: 2.5rem;
+    z-index: 1001;
+}
+
+header label span {
+    background-color: #4D7EA8;
+    border-radius: 3px;
+    display: block;
+    height: 6px;
+    position: absolute;
+    width: 100%;
+    transform-origin: left;
+}
+
+header label span:nth-child(1) {
+    top: 0;
+}
+
+header label span:nth-child(2) {
+    top: 0.75rem;
+}
+
+header label span:nth-child(3) {
+    top: 1.5rem;
+}
+
+nav {
+    background: #FFFFFF;
+    height: 100vh;
+    width: 18.75rem;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 4rem;
+}
+
+nav ul, nav li{
+    margin-bottom: 1rem;
+    line-height: 120%;
+}
+
+nav ul li a {
+    color: #28262C;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.nav-toggle:checked ~ nav{
+    right:0;
+}
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(1){
+    transform: rotate(45deg);
+    top: -2px;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(2){
+    opacity: 0;
+}
+
+.nav-toggle:checked~.nav-toggle-label span:nth-child(3){
+    transform:rotate(-45deg);
+}
+
+a{
+    font-family: "Inter";
+    color: #4D7EA8;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.footer{
+    background-color: #4D7EA8;
+    color: #ffffff;
+    text-align: left;
+    padding: 1.2rem;
+    position: sticky;
+    width: 100%;
+}
+
+.footer .contact-me {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "PublicSans";
+    color: #FFFFFF;
+    line-height: 100%;
+
+}
+
+.footer .contact-me-links{
+    line-height: 120%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+.footer .contact-me-links a:link, .footer .contact-me-links a:visited{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Inter";
+    display: block;
+    font-weight: 400;
+
+}
+.footer .footer-content{
+    color:#FFFFFF;
+    font-size: 15px;
+    font-family: "Inter";
+    line-height: 120%;
+}
+
+:visited{
+    color: #4D7EA8;
+    font-family: "Inter";
+}
+
+
+b {
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 150%;
+}
+
+u{
+    font-family: "Inter";
+    color: #28262C;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+i{
+    font-family: "Inter";
+    color: #28262C;
+    font-size: 18px;
+    line-height: 110%;
+}
+
+h3, h4 {
+    font-family: "Inter";
+    color:#28262C;
+    font-size: 1.8rem;
+    line-height: 1.2rem;
+}
+
+.hihomepage {
+    font-family: "PublicSans";
+    color: #28262C;
+    font-size: 33px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.dayounghomepage {
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size:33px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 5px;
+}
+.dah-young{
+    font-family: "PublicSans";
+    color: #28262C;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 5px;
+}
+
+.dayoungbold{
+    font-weight: 600;
+    font-family: "PublicSans";
+    font-size: 32px;
+    color: #4D7EA8;
+}
+
+.body-content .introhomepage {
+    color: #28262C;
+    font-size: 18px;
+    font-family: "Inter";
+    width: 350px;
+    padding: 0.3rem;
+}
+.homepage h3{
+    color:#4D7EA8;
+    font-size: 20px;
+    font-family: "PublicSans";
+    line-height: 110%;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.btn-link{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #4D7EA8;
+    border-radius:40px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+.myprojectsbtn-link{
+    cursor: pointer;
+    text-decoration: underline;
+    color:#28262C;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    padding:0.5rem
+}
+
+.about-me-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.resume-content p,.resume-content ul, .resume-content li{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+}
+.resume-content .dates{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    font-style: italic;
+}
+
+.resume-content h1{
+    text-align: center;
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 110%;
+    padding: 20px;
+    margin: 0;
+}
+
+.resume-content h2{
+    text-align: center;
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 20px;
+    margin: 0;
+}
+.resume-content{
+    padding: 1rem;
+}
+
+.resumepage h4{
+    font-size: 20px;
+    color: #28262C;
+    font-family: "Inter";
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.resume-bold{
+    font-size: 20px;
+    color: #28262C;
+    font-family: "Inter";
+    line-height: 120%;
+    font-weight: 600;
+}
+
+.minor{
+    color: #28262C;
+    font-family: "Inter";
+    line-height: 120%;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.chorus ,.sony ,.venice, .zync ,.scorekeepers,.sota{
+    margin-top: 1.5rem;;
+}
+
+.moodify-content{
+    padding: 1rem;
+}
+
+
+.moodify h1{
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-top: 40px;
+}
+
+.moodify h3{
+    font-family: "Inter";
+    color: #28262C;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.moodify-content ul, .moodify-content li, .moodify-content p{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.moodifywireframes{
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.goodreads-content{
+    padding: 1rem;
+}
+
+.goodreadsbold{
+    font-weight: 600;
+    font-family: "Inter";
+    color:#28262C;
+    font-size: 15px;
+}
+.goodreads h1{
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-top: 40px;
+}
+.goodreads h3{
+    font-family: "Inter";
+    color: #28262C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.goodreads-content ul, .goodreads-content li, .goodreads-content p{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.TargetAudiencePicture{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.GoodreadsLowFi1, .GoodreadsLowFi2 {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.about-me h1{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    line-height: 110%;
+}
+
+.about-me h2{
+    text-align: left;
+    font-family: "Inter";
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+    color:#28262C;
+    margin-top: 10px;
+    line-height: 110%;
+}
+
+.about-me-content p{
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Inter";
+    color:#28262C;
+    line-height: 150%;
+}
+
+.about-me-content ul, .about-me-content li{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.about-me-content{
+    padding: 0.5rem;
+}
+
+.about-me-bold{
+    font-weight: 600;
+    font-family: "PublicSans";
+    color:#28262C;
+    font-size: 30px;
+}
+
+.about-me-text{
+    margin-bottom: 1rem;
+}
+
+.body-content {
+    padding: 1rem;
+}
+
+
+.currentprojectpicture {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 2px solid #4D7EA8;
+    border-radius: 40px;
+    margin-top: 0.5rem;
+}
+
+.goodreadsmockup-img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 2px solid #4D7EA8;
+    border-radius: 40px;
+    margin-top: 0.5rem;
+}
+
+.moodifymockup-img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 2px solid #4D7EA8;
+    border-radius: 40px;
+    margin-top: 0.5rem;
+}
+
+.my-projects-content {
+    padding:1rem;
+}
+
+.myprojects h1{
+    text-align: center;
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 30px;
+    margin: 0;
+    line-height: 120%;
+}
+
+.myprojects h3 {
+    text-align: left;
+    font-family: "PublicSans";
+    color: #28262C;
+    font-size: 20px;
+    margin:0;
+    font-weight: 400;
+}
+
+.myprojects h2{
+    text-align: left;
+    font-family: "PublicSans";
+    color: #28262C;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 250%;
+    margin: 0;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.my-projects-currentprojectpicture{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 2px solid #4D7EA8;
+    border-radius: 40px;
+    margin-top: 0.5rem;
+}
+.haveyaheardmockup-img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: 2px solid #4D7EA8;
+    border-radius: 40px;
+    margin-top: 0.5rem;
+}
+.haveyaheard-content{
+    padding: 1rem;
+}
+
+.haveyaheard h1{
+    text-align: left;
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 30px;
+    margin: 0;
+    line-height: 110%;
+    font-weight: 700;
+}
+
+.haveyaheard h3{
+    text-align: left;
+    font-family: "Inter";
+    color: #28262C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+
+.haveyaheard h2{
+    text-align: left;
+    font-family: "Inter";
+    color: #28262C;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+.haveyaheard ul, .haveyaheard li, .haveyaheard p{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.currentproject{
+    padding: 1rem;
+}
+.currentproject h1{
+    text-align: left;
+    font-family: "PublicSans";
+    color: #4D7EA8;
+    font-size: 30px;
+    margin: 0;
+    line-height: 110%;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.currentproject h3{
+    text-align: left;
+    font-family: "Inter";
+    color: #28262C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.currentproject .researchquestion{
+    text-align: left;
+    font-family: "Inter";
+    color: #4D7EA8;
+    font-size: 21px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    border: 1px solid #4D7EA8;
+    border-radius: 50px;
+    padding: 1.5rem;
+    display: inline-block;
+}
+.currentproject ul, .currentproject li, .currentproject p{
+    font-family: "Inter";
+    color: #28262C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
