@@ -12,99 +12,101 @@
 </head>
 
 <body class="moodify">
-    <a href="index.html" class="logo">
-        <img src="media/images/logo.png" alt="homepagelogo" width="60">
-    </a>
     <header>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
-        <label for="nav-toggle" class="nav-toggle-label">
+        <a href="index.html" class="logo">
+          <img src="media/pictures/LOGO.png" alt="dayoung-logo">
+        </a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+          <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
             <span></span>
             <span></span>
-        </label>
-        <nav>
+          </label>
+          <nav>
             <ul>
-                <li><a href="aboutme.html">about me!</a></li>
-                <li><a href="resume.html">resume!</a></li>
-                <li><a href="myprojects.html">my projects!</a></li>
+              <li><a href='resume.html'>resume</a></li>
+              <li><a href="aboutme.html">about me</a></li>
+              <li><a href="myprojects.html">my projects</a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="moodify-content">
-        <img src="media/images/MoodifyMockup.png" alt="MoodifyMockup" width="400">
-    <h1>moodify: an app that creates a playlist based on your mood or activity</h1>
-    <h3>our team</h3>
-    <ul>
-        <li>ashley sanon</li>
-        <li>rayn adams</li>
-        <li>van nguyen</li>
-        <li>dayoung lee</li>
-    </ul>
-    <h3>tools used</h3>
-    <ul>
-        <li>figma</li>
-        <li>canva</li>
-    </ul>
-    <h3>introduction</h3>
-    <p>moodify, an app designed to transform the way you experience music by creating custom playlists that match your mood, activity, and personal tastes. leveraging data from streaming platforms, moodify tailors playlists to seamlessly fit any situtation.
-    </p>
-    <h3>the challenge</h3>
-    <b>mood subjectivity</b>
-    <ul>
-        <li>moods are interpreted differently whereas one song can evoke different moods/feelings in multiple subjects </li>
-    </ul>
-    <b>data quality</b>
-    <ul>
-        <li>more users are needed to have a better end result</li>
-    </ul>
-    <b>limited catalog</b>
-    <ul>
-        <li>if the app's library is limited, users may receive repetitive or irrelevant recommneations</li>
-    </ul>
-    <h3>process</h3>
-    <p>our objective was to create an application to integrate exploration, emotional regulation, productivity enhancement, and entertainment value into your listening playlist by implementing the spotify profile and using a comprehensive database
-    with such little time to prepare this product, i went straight into the process of designing and prototyping the product. i decided to go with a simple, to-the-point design where users would be abelt o understand the flow of the product. 
-    this was the ultimate product that we presented.
-    </p>
-    <img src="media/images/Wireframes1.png" alt="moodify" width="350" class="moodifywireframes">
-  
-    <!--
-    <h3>my redesign</h3>
-    <p></p>
-    <img src="" alt="">
-    !-->
+          </nav>
+        </header>
+        <img src="media/pictures/MoodifyMockup.png" alt="moodify-mockup" width="670px">
+        <section class="moodify-content-pt1">
+            <b>case study:</b>
+            <p>this was a product created through the <b>measure of music conference</b>, and my first time being the <b>lead ui/ux designer</b>!</p>
+            <b>note:</b>
+            <p>this case study is divided into <b>2 parts</b>: the initial concept design i made for the conference, and a redesign project that i created!</p>
+
+            <div class="moodify-tableofcontents">
+                <ul>
+                    <li><a href="#introduction"></a>introduction</li>
+                    <li><a href="#our-team"></a>our team</li>
+                    <li><a href="#tools-used"></a>tools used</li>
+                    <li><a href="#initial-concept"></a>[01] initial concept & design process</li>
+                    <li><a href="#the-challenge"></a>the challenge</li>
+                    <li><a href="#process"></a>process</li>
+                    <li><a href="#takeaways"></a>takeaways</li>
+                    <li><a href="#redesign"></a>[02] my redesign</li>
+                    <li><a href="#problems"></a>problems with the initial design</li>
+                    <li><a href="#creating-redesign"></a>creating the redesign</li>
+                    <li><a href="#myprocess"></a>my process</li>
+                    <li><a href="#final-takeaways"></a>my final takeaways</li>
+                </ul>
+            </div>
+            <hr>
+            <div id="introduction">
+                <h2>introduction</h2>
+                <p><b>moodify</b>, an app designed to transform the way you experience music by creating custom playlists that match your mood, activity, and personal tastes. leveraging data from streaming platforms, <b>moodify</b> tailors playlists to seamlessly fit any situation - whether you're working out, relaxing, or exploring new genres. this was created for the <b>measure of music </b>conference</p>
+            </div>
+            <div id="our-team">
+                <h2>our team</h2>
+                <ul>
+                    <li>ashley sanon</li>
+                    <li>dayoung lee</li>
+                    <li>van nguyen</li>
+                    <li>rayn adams</li>
+                </ul>
+            </div>
+            <div id="tools-used">
+                <ul>
+                    <li>figma</li>
+                    <li>chartmetric</li>
+                    <li>python</li>
+                </ul>
+            </div>
+            <hr>
+            <div id="initial-concept">
+                <h2>[01] initial concept & design process</h2>
+                <p>our mission was to develop a prototype by leveraging data to understand the algorithm between certain songs and various moods or activities, all while allowing users to receive a playlist. however, there were a couple challenges that we ran into...</p>
+            </div>
+            <div id="the-challenge">
+                <p><b>mood subjectivity</b></p>
+                <ul>
+                    <li>moods are interpreted differently whereas one song can evoke different moods/feelings in multiple subjects</li>
+                </ul>
+                <p><b>data quality</b></p>
+                <ul>
+                    <li>more users are needed to have a better end result</li>
+                </ul>
+                <p><b>limited catalog</b></p>
+                <ul>
+                    <li>if the app's library is limited, users may receive repetitive or irrelevant recommendations</li>
+                </ul>
+            </div>
+
     
-    
-    <h3>takeaways</h3>
-   
-        <u>future appliations</u>
-        <p>dsp data extension</p>
-        <ul>
-        <li>would allow the app to leverage streaming data for more personalized and dynamic playlist curation</li>
-        <li>integrating with dsps like spotify, apple music, or amazon music, this application could access user listening data</li>
-        </ul>
-        <u>building community</u>
-        <ul>
-        <li>create a vibrant community of music lovers who share their experiences, discover new music, and connect with each other based on their moods and activities</li>
-        <li>whether that is through discussion forums or collaborative playlists, users would be able to create this sense of belonging amongst people of like-minded interests</li>
-        </ul>
-        <u>record label collaboration</u>
-        <ul>
-        <li>would enhance its content offerings, providing a unique experience for users, and create marketing opportunities that would benefit both the app and the labels</li>
-        </ul>
+        </section>
 
-    <h3>my own takeaways</h3>
-    <p>this was a project in partnership with the <b>measure of music</b>. we had two days to create an idea to pitch and compose a presentation displaying what ata we used and how we use it. being my first time participating in this conference, it felt daunting because i was not confident in implementing the data and create something from that. i enjoyed working with my team, and hopefully this is something that can be developed into something more!</p>
 
-    <a href="https://drive.google.com/file/d/1cT2-TTV0NqLDyzulf-wjK0-a40YQ89hZ/view?usp=sharing">click here to see the presentation!</a>
-</section>
 
-<footer class ="footer">
-    <p class="contact-me">contact me!</p>
-    <p class="contact-me-links">
-        <a href="https://www.linkedin.com/in/dayoung-lee-/" target="_blank">linkedin</a>
-        <a href="mailto:dayounglee526@gmail.com" target="_blank">email</a>
-    </p>
-    <p class="footer-content">&copy; dayounglee2024</p>
-</footer>
+
+
+
+
+        <footer class ="footer">
+            <p class="footer-content-trademark">&copy; dayounglee2025</p>
+            <p id="contact-me"><b>contact me!</b></p>
+            <p id="email">dayounglee526@gmail.com</p>
+            <a href="https://www.linkedin.com/in/dayoung-lee-/">linkedin</a>
+        </footer>
 </body>
