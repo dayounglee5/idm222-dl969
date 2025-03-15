@@ -267,40 +267,7 @@ header {
         align-self: end;
         margin-right: 1.5rem;
     }
-    /* #circle {
-        background: var(--main-color);
-        border-radius: 100rem 100rem 0 0;
-        width: 180px;
-        height: 100px;
-        grid-column: 5;
-        justify-self: end;
-        transform: rotate(270deg) translateY(50px) translateX(-60px);
-        align-self: end;
-        grid-row: 1;
-    }
-    #circle2 {
-        background: var(--main-color);
-        border-radius: 100rem 100rem 0 0;
-        width: 300px;
-        height: 160px;
-        grid-column: 1;
-        justify-self: start;
-        transform: rotate(90deg) translate(50px, 90px);
-        align-self: end;
-        grid-row: 2;
-  }
 
-  #circle4{
-    background: var(--main-color);
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    grid-column: 2;
-    align-self: start;
-    grid-row: 6;
-    transform: translate(-100px, -200px);
-    z-index: -1;
-  } */
 
   #playlist-character {
     grid-column: 2 / span 3;
@@ -602,7 +569,7 @@ header {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     border-radius: 40px;
     width: 670px;
-    height: 378px;
+    height: auto;
   }
 
 
@@ -1272,7 +1239,7 @@ header {
   .problemswithcurrentdesign,
   .userresearch,
   .process,
-  .wireframes {
+  .wireframes, .prototype-goodreads, .next-steps, .takeaways-goodreads,.impact {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1631,6 +1598,65 @@ header {
         justify-self: center;
     }
   }
+.impact {
+  h2{
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+    font-size: 23px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+  .prototype-goodreads {
+    margin-top: 1rem;
+
+    a{
+      font-family: var(--secondary-font);
+      color: var(--main-color);
+      font-size: 18px;
+    }
+    h2{
+      font-family: var(--main-font);
+      color: var(--secondary-color);
+      font-weight: 600;
+      font-size: 23px;
+      font-style: normal;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+  .next-steps{
+    h2{
+      font-family: var(--main-font);
+      color: var(--secondary-color);
+      font-weight: 600;
+      font-size: 23px;
+      font-style: normal;
+    }
+    ul, li{
+      font-size: 18px;
+    }
+    
+  }
+
+  .takeaways-goodreads{
+    margin-bottom: 2rem;
+    h2{
+      font-family: var(--main-font);
+      color: var(--secondary-color);
+      font-weight: 600;
+      font-style: normal;
+      font-size: 23px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+
+
 /* have ya heard default */
   .haveyaheard-container {
     max-width: 1200px;
@@ -1741,7 +1767,6 @@ header {
   .our-process,
   .the-solution,
   .prototype,
-  .my-redesign,
   .takeaways {
     display: grid;
     grid-template-columns: 1fr;
@@ -1783,7 +1808,6 @@ header {
   .our-process,
   .the-solution,
   .prototype,
-  .my-redesign,
   .takeaways {
     h2 {
       font-family: var(--main-font);
@@ -1966,7 +1990,6 @@ header {
         transform: translateX(5px);
       }
     
-
     
       .nav-toggle {
         display: none;
@@ -2293,7 +2316,7 @@ header {
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
       border-radius: 40px;
       width: 600px;
-      height: 337.50px;
+      height: auto;
     }
    
   
@@ -2462,8 +2485,6 @@ header {
       margin-top: 0.8rem;
       grid-column: 2;
       grid-row: 3;
-      background-color: var(--tertiary-color);
-      color: var(--main-color);
       padding: 15px;
       border-radius: 48px;
       font-size: 14px;
@@ -2625,39 +2646,31 @@ header {
         grid-column: 2;
         grid-row: 2;
         margin: 0;
-        font-family: var(--main-font);
-        color: var(--secondary-color);
         font-size: 16px;
       }
       p{
-        font-family: var(--main-font);
         font-size: 16px;
-        color: var(--secondary-color);
         margin: 0;
         line-height: 150%;
       }
       #contact-me{
-        font-family: var(--main-font);
         font-size: 16px;
-        color: var(--secondary-color);
         grid-column: 1;
         grid-row: 1;
       }
       #email{
-        font-family: var(--main-font);
         font-size: 16px;
-        color: var(--secondary-color);
+
         grid-column: 1;
         grid-row: 2;
       }
       a{
-        font-family: var(--main-font);
+
         font-size: 16px;
-        color: var(--secondary-color);
+
         grid-column: 1;
         grid-row: 3;
       }
-  
   
     }
     
@@ -2668,11 +2681,8 @@ header {
       justify-content: space-between;
   
       h1 {
-          font-family: var(--secondary-font);
-          color: var(--main-color);
-          font-weight: 500;
+
           font-size: 80px;
-          font-style: normal;
           text-align: center;
           grid-column: 2 / span 3;
           grid-row: 2;
@@ -2681,10 +2691,6 @@ header {
           margin-left: 5.5rem;
       }
       #hi {
-          font-family: var(--main-font);
-          color: var(--secondary-color);
-          font-weight: 400;
-          font-style: normal;
           font-size: 50px;
           grid-column: 1 / span 2;
           align-content: end;
@@ -2693,10 +2699,7 @@ header {
       }
   
       #name {
-          font-family: var(--main-font);
-          color: var(--secondary-color);
-          font-weight: 400;
-          font-style: normal;
+
           font-size: 50px;
           grid-column: 3 / span 2;
           grid-row: 3;
@@ -2704,10 +2707,7 @@ header {
       }
   
       p{
-          font-family: var(--main-font);
-          color: var(--secondary-color);
-          font-weight: 400;
-          font-style: normal;
+
           font-size: 20px;
           grid-row: 3;
           grid-column: 2 / span 4;
@@ -2748,7 +2748,6 @@ header {
     margin-left: 0px;
 
     #circle {
-      background: var(--main-color);
       border-radius: 50%;
       width: 150px;
       height: 150px;
@@ -2759,7 +2758,6 @@ header {
       z-index: -1;
   }
   #circle2 {
-    background: var(--main-color);
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -2768,43 +2766,29 @@ header {
     grid-row: 1;
     transform: translate(-20px, 240px);
 }
-
     .about-me-text-content{
         grid-column: 2;
         grid-row: 1 / span 3;
         margin-left: 3rem;
     }
     #welcome{
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-weight: 500;
-        font-style: normal;
         font-size: 35px;
         margin: 0 0 0.8rem 0;
     }
 
     #intro{
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-weight: 500;
-        font-style: normal;
+
         font-size: 35px;
         margin: 0 0 1.5rem 0;
     }
     p {
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-weight: 400;
-        font-style: normal;
+
         font-size: 18px;
         line-height: 150%;
     }
 
     ul, li{
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-weight: 400;
-        font-style: normal;
+
         font-size: 18px;
     }
     #dayoungphoto{
@@ -2830,9 +2814,8 @@ header {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     border-radius: 40px;
     width: 480px;
-    height: 270px;
+    height: auto;
   }
-
 
   #moodify{
     grid-column: 1;
@@ -2918,10 +2901,6 @@ header {
     margin-left: 0rem;
     justify-self: center;
     align-self: center;
-    font-family: var(--main-font);
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-style: normal;
     font-size: 35px;
     line-height: 180%;
   
@@ -2932,10 +2911,6 @@ header {
     grid-column: 1 / span 1;
     grid-row: 3;
     align-self: center;
-    font-family: var(--main-font);
-    color: var(--secondary-color);
-    font-weight: 700;
-    font-style: normal;
     font-size: 25px;
     line-height: 180%;
 
@@ -2943,9 +2918,6 @@ header {
 
   p.moodify{
     grid-column: 1 / span 1;
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
-    font-weight: 400;
     font-size: 18px;
     line-height: 150%;
   }
@@ -2959,7 +2931,7 @@ header {
     padding: 15px;
     border-radius: 48px;
     font-size: 14px;
-    font-family: var(--main-font);
+
     display: inline-block;
     justify-self: end;   
     align-self: center;
@@ -2972,8 +2944,6 @@ header {
     grid-column: 2;
     grid-row: 3;
     align-self: center;
-    font-family: var(--main-font);
-    color: var(--secondary-color);
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
@@ -2982,24 +2952,17 @@ header {
 
   p.goodreads{
     grid-column: 2;
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     align-self: center;
     max-width: 70ch;
     margin-bottom: 2rem;
-
-   
-
   }
   .tag2{
     margin-top: 0.8rem;
     grid-column: 2;
     grid-row: 3;
-    background-color: var(--tertiary-color);
-    color: var(--main-color);
     padding: 15px;
     border-radius: 48px;
     font-size: 14px;
@@ -3008,7 +2971,6 @@ header {
     justify-self: end;   
     align-self: center;
     margin-right: 0rem;
-
   }
 
 /*haveyaheard*/
@@ -3017,10 +2979,6 @@ header {
     grid-column: 1 / span 1;
     grid-row: 8;
     align-self: center;
-    font-family: var(--main-font);
-    color: var(--secondary-color);
-    font-weight: 700;
-    font-style: normal;
     font-size: 25px;
     line-height: 180%;
   }
@@ -3028,23 +2986,17 @@ header {
   p.haveyaheard{
     grid-column: 1;
     grid-row: 9;
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
-    font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     align-self: center;
     max-width: 70ch;
     margin-bottom: 2rem;
-  
 
   }
   .tag3{
     margin-top: 0.8rem;
     grid-column: 1;
     grid-row: 8;
-    background-color: var(--tertiary-color);
-    color: var(--main-color);
     padding: 15px;
     border-radius: 48px;
     font-size: 14px;
@@ -3061,10 +3013,6 @@ header {
     grid-column: 2;
     grid-row: 8;
     align-self: center;
-    font-family: var(--main-font);
-    color: var(--secondary-color);
-    font-weight: 700;
-    font-style: normal;
     font-size: 25px;
     line-height: 180%;
   }
@@ -3072,8 +3020,6 @@ header {
   p.syncwithdata{
     grid-column: 2;
     grid-row: 9;
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -3081,19 +3027,14 @@ header {
     max-width: 70ch;
     margin-bottom: 2rem;
 
-  
-
   }
   .tag4{
     margin-top: 0.8rem;
     grid-column: 2;
     grid-row: 8;
-    background-color: var(--tertiary-color);
-    color: var(--main-color);
     padding: 15px;
     border-radius: 48px;
     font-size: 14px;
-    font-family: var(--main-font);
     display: inline-block;
     justify-self: end;   
     align-self: center;
@@ -3108,8 +3049,7 @@ header {
 }
 .moodify-tableofcontents{
   display: grid;
-      grid-template-columns: 800px;
-      font-family: var(--secondary-font);
+  grid-template-columns: 800px;
       font-size: 20px;
       justify-content: center;
       justify-items: start;
@@ -3161,7 +3101,6 @@ header {
 .goodreads-tableofcontents{
   display: grid;
   grid-template-columns: 800px;
-  font-family: var(--secondary-font);
   font-size: 20px;
   justify-content: center;
   justify-items: start;
@@ -3184,8 +3123,8 @@ header {
 
 .line{
   width:80%;
-
 }
+
 .goodreads-content-pt1 img{
   max-width: 100%;
   height: auto;
@@ -3222,12 +3161,15 @@ header {
     }
   }
 }
+.wireframes img.lowfi4{
+  max-height: 695px;
+}
 
 .introduction-goodreads,
 .problemswithcurrentdesign,
 .userresearch,
 .process,
-.wireframes {
+.wireframes, .impact, .takeaways-goodreads, .next-steps, .prototype-goodreads {
   display: grid;
   grid-template-columns: 800px;
   width: 100%;
@@ -3250,9 +3192,6 @@ header {
   }
   
   h4 {
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     margin-bottom: 10px;
@@ -3312,7 +3251,6 @@ header {
 .haveyaheard-tableofcontents{
   display: grid;
   grid-template-columns: 800px;
-  font-family: var(--secondary-font);
   font-size: 20px;
   justify-content: center;
   justify-items: start;
@@ -3327,7 +3265,7 @@ header {
   height: auto;
   width: 800px; 
   justify-self: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+
 }
 .haveyaheard-content {
   .introduction, .tools-used, .our-team, .problems, .objective, .our-users, .our-process, .our-goals, .our-business-concept, .the-solution, .limitations, .prototype, .takeaways, .future-applications {
@@ -3339,6 +3277,7 @@ header {
   }
 }
 }
+
 @media screen and (max-width:999px){
   header {
     width: 100vw;
@@ -3349,8 +3288,6 @@ header {
     margin: 0;
     background-color: var(--color-base);
     position: relative;
-    font-family: var(--main-font);
-    color: var(--secondary-color);
     font-size: 20px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   }
@@ -3453,57 +3390,7 @@ header {
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
     transform: rotate(-45deg);
   }
-    .footer{
-      background-color: var(--color-base);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      row-gap: 0.2rem;
-      padding: 30px 35px;
-      bottom: 0;
-      margin: 0;
-      position: relative;
-      width:100%;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-      
-      .footer-content-trademark{
-        text-align: right;
-        grid-column: 2;
-        grid-row: 2;
-        margin: 0;
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-size: 16px;
-      }
-      p{
-        font-family: var(--main-font);
-        font-size: 16px;
-        color: var(--secondary-color);
-        margin: 0;
-        line-height: 150%;
-      }
-      #contact-me{
-        font-family: var(--main-font);
-        font-size: 16px;
-        color: var(--secondary-color);
-        grid-column: 1;
-        grid-row: 1;
-      }
-      #email{
-        font-family: var(--main-font);
-        font-size: 16px;
-        color: var(--secondary-color);
-        grid-column: 1;
-        grid-row: 2;
-      }
-      a{
-        font-family: var(--main-font);
-        font-size: 16px;
-        color: var(--secondary-color);
-        grid-column: 1;
-        grid-row: 3;
-      }
-  
-    }
+
     
   .homepage-content {
     display: grid;
@@ -3512,11 +3399,7 @@ header {
     justify-content: space-between;
 
     h1 {
-      font-family: var(--secondary-font);
-      color: var(--main-color);
-      font-weight: 500;
       font-size: 70px;
-      font-style: normal;
       grid-column: 1 / span 3;
       grid-row: 2;
       justify-self: center;
@@ -3524,22 +3407,14 @@ header {
       margin-left: 5rem;
     }
     #hi {
-      font-family: var(--main-font);
-      color: var(--secondary-color);
-      font-weight: 400;
-      font-style: normal;
       font-size: 35px;
-      grid-column: 1;
+      grid-column: 1 / span 2;
       align-content: end;
       grid-row: 1;
-      justify-self: end;
+      justify-self: start;
     }
 
     #name {
-      font-family: var(--main-font);
-      color: var(--secondary-color);
-      font-weight: 400;
-      font-style: normal;
       font-size: 35px;
       grid-column: 2 / span 2;
       grid-row: 3;
@@ -3547,10 +3422,6 @@ header {
     }
 
     p{
-      font-family: var(--main-font);
-      color: var(--secondary-color);
-      font-weight: 400;
-      font-style: normal;
       font-size: 20px;
       grid-row: 3;
       grid-column: 1 / span 3;
@@ -3560,7 +3431,6 @@ header {
       
     }
     #circle {
-      background: var(--main-color);
       border-radius: 100rem 100rem 0 0;
       width: 180px;
       height: 100px;
@@ -3571,7 +3441,6 @@ header {
       grid-row: 1;
     }
     #circle2 {
-        background: var(--main-color);
         border-radius: 100rem 100rem 0 0;
         width: 200px;
         height: 160px;
@@ -3629,10 +3498,6 @@ header {
       margin-bottom: 1rem;
       justify-self: center;
       align-self: center;
-      font-family: var(--main-font);
-      color: var(--secondary-color);
-      font-weight: 600;
-      font-style: normal;
       font-size: 30px;
       line-height: 180%;
   }
@@ -3645,10 +3510,6 @@ header {
 
       h2{
           grid-column: 1 / span 2;
-          font-family: var(--secondary-font);
-          color: var(--secondary-color);
-          font-style: normal;
-          font-weight: 700;
           font-size: 25px;
           line-height: 180%;
       }
@@ -3656,10 +3517,6 @@ header {
       h3{
         grid-column: 1 / span 3;
         grid-row: 2;
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 180%;
       }
@@ -3667,20 +3524,12 @@ header {
       h4{
           grid-column: 1;
           grid-row: 3;
-          font-family: var(--secondary-font);
-          color: var(--secondary-color);
-          font-style: normal;
-          font-weight: 500;
           font-size: 18px;
           line-height: 180%;
       }
       p{
           grid-column: 1;
           grid-row: 4;
-          font-family: var(--secondary-font);
-          color: var(--secondary-color);
-          font-style: normal;
-          font-weight: 400;
           font-size: 16px;
           line-height: 180%;
       }
@@ -3698,30 +3547,18 @@ header {
     margin-bottom: 1rem;
 
     h2{
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-style: normal;
-        font-weight: 700;
         font-size: 25px;
         line-height: 180%;
     }
 
     h3{
         grid-column: 1 / span 5;
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-style: normal;
-        font-weight: 600;
         font-size: 23px;
         line-height: 180%;
     }
 
     h4{
         grid-column: 1 / span 3;
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-style: normal;
-        font-weight: 500;
         font-size: 18px;
         line-height: 180%;
     }
@@ -3732,10 +3569,6 @@ header {
     }
     ul, li{
         grid-column: 1 / span 5;
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
         line-height: 180%;
     }
@@ -3745,16 +3578,11 @@ header {
     grid-column: 1 / span 5;
 
     p{
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
         line-height: 180%;
     }
 }
 .resume-link{
-  font-family: var(--main-font);
   font-size: 18px;
 }
 }
@@ -3797,46 +3625,31 @@ header {
     margin-left: 3rem;
   }
   #welcome{
-      font-family: var(--main-font);
-      color: var(--secondary-color);
-      font-weight: 500;
-      font-style: normal;
       font-size: 40px;
       margin: 0 0 0.8rem 0;
   }
 
   #intro{
-      font-family: var(--main-font);
-      color: var(--secondary-color);
-      font-weight: 500;
-      font-style: normal;
       font-size: 40px;
       margin: 0 0 1.5rem 0;
   }
   p {
-      font-family: var(--secondary-font);
-      color: var(--secondary-color);
-      font-weight: 400;
-      font-style: normal;
       font-size: 20px;
       line-height: 150%;
   }
 
   ul, li{
-      font-family: var(--secondary-font);
-      color: var(--secondary-color);
-      font-weight: 400;
       font-style: normal;
       font-size: 20px;
   }
   #dayoungphoto{
     width: 350px;
-            transform: rotate(-8deg);
-            grid-column: 1;
-            justify-self: center;
-            grid-row: 1;
-            align-self: center;
-            margin-top: 1rem;
+    transform: rotate(-8deg);
+    grid-column: 1;
+    justify-self: center;
+    grid-row: 1;
+    align-self: center;
+    margin-top: 1rem;
   }
 
 
@@ -3848,7 +3661,7 @@ header {
   img {
     width: 100%;
     border-radius: 30px;
-    height: 260.72px;
+    height: auto;
   }
   
   h1 {
@@ -3985,7 +3798,6 @@ header {
   height: auto;
   width: 600px;
   justify-self: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .goodreads-container{
@@ -4008,7 +3820,6 @@ header {
 .goodreads-tableofcontents{
   display: grid;
   grid-template-columns: 600px;
-  font-family: var(--secondary-font);
   font-size: 18px;
   justify-content: center;
   justify-items: start;
@@ -4025,18 +3836,18 @@ header {
   max-width: 520px;
 }
 
-.introduction-goodreads,.tools-used,.problemswithcurrentdesign,.userresearch, .userresearch2, .process, .processpt2, .prototype, .next-steps, .takeaways {
+.introduction-goodreads,.tools-used,.problemswithcurrentdesign,.userresearch, .userresearch2, .process, .processpt2, .prototype-goodreads, .next-steps, .takeaways-goodreads, .wireframes, .impact{
   display: grid;
   grid-template-columns: 600px;
   width: 100%;
   justify-content: center;
   justify-items: start;
 }
-.introduction-goodreads h2,.tools-used h2,.problemswithcurrentdesign h2,.userresearch h2, .userresearch2 h2, .process h2, .processpt2 h2, .prototype h2, .next-steps h2, .takeaways h2{
+.introduction-goodreads h2,.tools-used h2,.problemswithcurrentdesign h2,.userresearch h2, .userresearch2 h2, .process h2, .processpt2 h2, .prototype-goodreads h2, .next-steps h2, .takeaways-goodreads h2, .impact h2{
   font-size: 20px;
 }
 
-.introduction-goodreads p,.tools-used p,.problemswithcurrentdesign p,.userresearch p, .userresearch2 p, .process p, .processpt2 p, .prototype p, .next-steps p, .takeaways p, .tools-used ul, .tools-used li, .problemswithcurrentdesign ul, .problemswithcurrentdesign li, .userresearch ul, .userresearch li, .userresearch2 ul, .userresearch2 li{
+.introduction-goodreads p,.tools-used p,.problemswithcurrentdesign p,.userresearch p, .userresearch2 p, .process p, .processpt2 p, .prototype p, .next-steps p, .takeaways-goodreads p, .tools-used ul, .tools-used li, .problemswithcurrentdesign ul, .problemswithcurrentdesign li, .userresearch ul, .userresearch li, .userresearch2 ul, .userresearch2 li{
   font-size: 18px;
 }
 
@@ -4045,7 +3856,6 @@ header {
   height: auto;
   width: 600px;
   justify-self: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .problemswithcurrentdesign {
@@ -4120,6 +3930,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
+    gap: 15px;
   }
   
   img.lowfi1 {
@@ -4166,7 +3977,7 @@ header {
     grid-column: 2;
     grid-row: 1;
     justify-self: start;
-    max-height: 900px;
+    max-height: 825px;
     width: auto;
     margin-left: 0rem;
     max-width: 100%;
@@ -4237,12 +4048,8 @@ header {
   height: auto;
   width: 600px;
   justify-self: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 }
-
-
-
 
 @media screen and (max-width: 768px){
     .homepage-content {
@@ -4255,10 +4062,7 @@ header {
         margin-left: 3rem;
       }  
       #name {
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-weight: 400;
-        font-style: normal;
+
         font-size: 35px;
         grid-column: 2 / span 2;
         grid-row: 3;
@@ -4273,7 +4077,6 @@ header {
 
   
     #circle4{
-      background: var(--main-color);
       border-radius: 50%;
       width: 200px;
       height: 200px;
@@ -4308,35 +4111,21 @@ header {
       margin-left: 3rem;
     }
     #welcome{
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-weight: 500;
-        font-style: normal;
         font-size: 40px;
         margin: 0 0 0.8rem 0;
     }
   
     #intro{
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-weight: 500;
-        font-style: normal;
         font-size: 40px;
         margin: 0 0 1.5rem 0;
     }
     p {
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-weight: 400;
-        font-style: normal;
         font-size: 20px;
         line-height: 150%;
     }
   
     ul, li{
-        font-family: var(--secondary-font);
-        color: var(--secondary-color);
-        font-weight: 400;
+
         font-style: normal;
         font-size: 20px;
     }
@@ -4359,7 +4148,7 @@ header {
     img {
       width: 100%;
       border-radius: 30px;
-      height: 195.75px;
+      height: auto;
     }
     
     h1 {
@@ -4432,7 +4221,6 @@ header {
   .moodify-tableofcontents {
     display: grid;
     grid-template-columns: 600px;
-    font-family: var(--secondary-font);
     font-size: 18px;
     justify-content: center;
     justify-items: start;
@@ -4500,7 +4288,6 @@ header {
     height: auto;
     width: 600px;
     justify-self: center;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   }
   
   .goodreads-container{
@@ -4523,11 +4310,9 @@ header {
   .goodreads-tableofcontents{
     display: grid;
     grid-template-columns: 600px;
-    font-family: var(--secondary-font);
     font-size: 18px;
     justify-content: center;
     justify-items: start;
-  
   }
   
   .goodreads-casestudy {
@@ -4540,18 +4325,18 @@ header {
     max-width: 520px;
   }
   
-  .introduction-goodreads,.tools-used,.problemswithcurrentdesign,.userresearch, .userresearch2, .process, .processpt2, .prototype, .next-steps, .takeaways {
+  .introduction-goodreads,.tools-used,.problemswithcurrentdesign,.userresearch, .userresearch2, .process, .processpt2, .prototype, .next-steps, .takeaways, .wireframes, .impact {
     display: grid;
     grid-template-columns: 600px;
     width: 100%;
     justify-content: center;
     justify-items: start;
   }
-  .introduction-goodreads h2,.tools-used h2,.problemswithcurrentdesign h2,.userresearch h2, .userresearch2 h2, .process h2, .processpt2 h2, .prototype h2, .next-steps h2, .takeaways h2{
+  .introduction-goodreads h2,.tools-used h2,.problemswithcurrentdesign h2,.userresearch h2, .userresearch2 h2, .process h2, .processpt2 h2, .prototype h2, .next-steps h2, .takeaways h2, .impact h2{
     font-size: 20px;
   }
   
-  .introduction-goodreads p,.tools-used p,.problemswithcurrentdesign p,.userresearch p, .userresearch2 p, .process p, .processpt2 p, .prototype p, .next-steps p, .takeaways p, .tools-used ul, .tools-used li, .problemswithcurrentdesign ul, .problemswithcurrentdesign li, .userresearch ul, .userresearch li, .userresearch2 ul, .userresearch2 li{
+  .introduction-goodreads p,.tools-used p,.problemswithcurrentdesign p,.userresearch p, .userresearch2 p, .process p, .processpt2 p, .prototype p, .next-steps p, .takeaways p, .tools-used ul, .tools-used li, .problemswithcurrentdesign ul, .problemswithcurrentdesign li, .userresearch ul, .userresearch li, .userresearch2 ul, .userresearch2 li .impact p{
     font-size: 18px;
   }
   
@@ -4560,7 +4345,6 @@ header {
     height: auto;
     width: 600px;
     justify-self: center;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   }
   
   .problemswithcurrentdesign {
@@ -4674,14 +4458,12 @@ header {
       grid-column: 2;
       grid-row: 1;
       justify-self: start;
-      max-height: 900px;
       width: auto;
       margin-left: 0rem;
       max-width: 100%;
     }
     
     p.wireframe-desktop-explanation {
-
       font-weight: 400;
       font-size: 18px;
       line-height: 150%;
@@ -4705,7 +4487,6 @@ header {
   .haveyaheard-tableofcontents{
     display: grid;
     grid-template-columns: 600px;
-    font-family: var(--secondary-font);
     font-size: 18px;
     justify-content: center;
     justify-items: start;
@@ -4744,8 +4525,17 @@ header {
   
   }
 
+  /* @media screen and (max-width:700px){
+
+  } */
+
 /* small screens */
-@media screen and (max-width:650px){
+@media screen and (max-width:500px){
+  .footer{
+    .footer-content-trademark, p, #contact-me, #email, a{
+      font-size: 14px;
+    }
+  }
   header {
     width: 100vw;
       display: flex;
@@ -4755,8 +4545,6 @@ header {
       margin: 0;
       background-color: var(--color-base);
       position: relative;
-      font-family: var(--main-font);
-      color: var(--secondary-color);
       font-size: 20px;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
      
@@ -4858,11 +4646,7 @@ header {
       transform: rotate(-45deg);
     }
 
-    .footer{
-      .footer-content-trademark, p, #contact-me, #email, a{
-        font-size: 14px;
-      }
-    }
+
 
   .homepage-content h1 {
     font-size: 40px;
@@ -4895,7 +4679,6 @@ header {
     margin-right: 0rem;
   }
   .homepage-content #circle {
-
         background: var(--main-color);
         border-radius: 100rem 100rem 0 0;
         width: 130px;
@@ -4930,9 +4713,10 @@ header {
   max-width: 150px;
   margin-top: 0rem;
   grid-row: 5;
-  justify-self: center;
+  justify-self: end;
   margin-bottom: -2rem;
-  margin-right: -2rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
 }
 .resume-content {
   display: grid;
@@ -4949,10 +4733,6 @@ header {
   margin-bottom: 1.5rem;
   justify-self: center;
   align-self: center;
-  font-family: var(--main-font);
-  color: var(--secondary-color);
-  font-weight: 600;
-  font-style: normal;
   font-size: 28px;
   line-height: 1.5;
 }
@@ -4966,10 +4746,6 @@ header {
 
 .resume-content .education-content h2 {
   grid-column: 1;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -4978,10 +4754,6 @@ header {
 .resume-content .education-content h3 {
   grid-column: 1;
   grid-row: 2;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -4989,10 +4761,6 @@ header {
 .resume-content .education-content h4 {
   grid-column: 1;
   grid-row: 4;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -5000,10 +4768,6 @@ header {
 .resume-content .education-content p {
   grid-column: 1;
   grid-row: 5;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -5024,10 +4788,6 @@ header {
 
 .resume-content .experience-content h2 {
   grid-column: 1;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -5035,20 +4795,12 @@ header {
 
 .resume-content .experience-content h3 {
   grid-column: 1;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .resume-content .experience-content h4 {
   grid-column: 1;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -5069,10 +4821,6 @@ header {
 
 .resume-content .experience-content li {
   grid-column: 1;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -5083,20 +4831,12 @@ header {
 }
 
 .resume-content .skills-content h2 {
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
 
 .resume-content .skills-content p {
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -5175,7 +4915,7 @@ header {
 .my-projects-content img {
   width: 100%;
   border-radius: 20px;
-  height: 212.06px;
+  height: auto;
 }
 
 .my-projects-content #moodify,
@@ -5207,9 +4947,10 @@ header {
 }
 
 .my-projects-content #circle {
-  width: 100px;
-  height: 100px;
-  transform: translate(-50px, 50px);
+  grid-row: 1;
+  width: 80px;
+  height: 80px;
+  transform: translate(-20px, 60px);
   grid-column: 1;
 }
 .my-projects-content #circle2 {
@@ -5221,14 +4962,16 @@ header {
 .my-projects-content #circle4 {
   width: 80px;
   height: 80px;
-  transform: translate(-50px, 50px);
+  transform: translate(-20px, 70px);
   grid-column: 1;
+  grid-row: 7;
 }
 .my-projects-content #circle5 {
   width: 100px;
   height: 100px;
-  transform: translate(10px, -50px);
+  transform: translate(10px, -80px);
   grid-column: 1;
+  grid-row: 11;
 }
 
 .my-projects-content h1 {
@@ -5328,7 +5071,6 @@ header {
   height: auto;
   width: 350px;
   max-height: 800px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   justify-self: center;
 }
 .moodify-casestudy {
@@ -5387,10 +5129,11 @@ header {
 .goodreads-content-pt1 {
   display: grid;
   grid-template-columns: 1fr;
-          grid-template-rows: auto;
-          gap: 0.5rem;
-          width: 100%;
-          justify-content: center;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+
   h1 {
     font-size: 28px;
     margin-top: 2rem;
@@ -5418,16 +5161,13 @@ header {
   display: grid;
   grid-template-columns: 350px;
   width: 100%;
-  font-family: var(--secondary-font);
+
   font-size: 15px;
 }
 
 .goodreads-casestudy {
   grid-column: 1 / span 1;
   grid-row: 3;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-weight: 400;
   font-size: 12px;
   line-height: 160%;
   max-width: 350px;
@@ -5439,9 +5179,9 @@ header {
 
 .introduction-goodreads,
 .problemswithcurrentdesign,
-.userresearch,.user-research-feedback,.prototype,
+.userresearch,.user-research-feedback,.prototype-goodreads,
 .process,.next-steps,
-.wireframes {
+.wireframes, .impact, .takeaways-goodreads {
   display: grid;
   grid-template-columns: 350px;
   width: 100%;
@@ -5478,14 +5218,23 @@ header {
     max-width: 320px;
   }
 }
-
+.problemswithcurrentdesign .bad-design-list{
+  list-style: none;
+}
 .problemswithcurrentdesign {  
-  img {
+  /* img {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     max-width: 100%;
-  }
-  
+  } */
+
+   .ul, li{
+    img {
+      width: 400px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: -1.5rem;
+    }
   .shelving-images {
     display: grid;
     grid-template-columns: 1fr;
@@ -5496,11 +5245,16 @@ header {
       grid-column: 1;
       grid-row: 1;
       width: 100%;
-      max-width: 300px;
+      max-width: 200px;
       margin-left: 0;
     }
-    
-    .bad-design2, .bad-design4 {
+    .bad-design2 {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: start;
+      margin-left: 0rem;
+    }
+  .bad-design4 {
       grid-column: 1;
       grid-row: 2;
       width: 100%;
@@ -5509,6 +5263,7 @@ header {
       align-self: start;
     }
   }
+}
 }
 
 .userresearch2 {
@@ -5690,4 +5445,66 @@ header {
   justify-self: center;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
+}
+
+@media screen and (max-width: 400px){
+  .homepage-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 150px auto;
+    justify-content: space-between;
+  }
+  
+  .homepage-content h1{
+    margin-left: 2rem;
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+
+  .homepage-content #hi{
+    font-size: 28px;
+    justify-self: start;
+  }
+  .homepage-content #name{
+    font-size: 28px;
+    grid-column: 2 / span 1;
+    justify-self: start;
+  }
+
+  .homepage-content p{
+    font-size: 13px;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    margin-left: 3rem;
+  }
+  .homepage-content #circle{
+    width: 100px;
+    height: 80px;
+    grid-column: 2;
+  }
+  .homepage-content #playlist-character{
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+  .homepage-content #spotify-playlist{
+    grid-column: 1 / span 2;
+    justify-self: center;
+    margin-left: 0rem;
+  }
+  .footer{
+    .footer-content-trademark, p, #contact-me, #email, a{
+      font-size: 12px;
+    }
+  }
+  .resume-content{
+    max-width: 350px;
+  }
+
+  .about-me-content #circle{
+    width: 100px;
+    height: 100px;
+  }
+  .about-me-content #circle2{
+    transform: translate(60px, -560px);
+  }
 }
